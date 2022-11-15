@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="30dp">
@@ -10,13 +11,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/from_to_tv"
-        android:drawableRight="@drawable/ic_arrow_downward"
         android:minWidth="50dp"
         android:minHeight="20dp"
         android:padding="5dp"
-        android:text="   To   "
+        android:text="@string/to"
         android:textColor="@color/black"
         android:textSize="22sp"
+        app:drawableRightCompat="@drawable/ic_arrow_downward"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,13 +37,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/from_to_tv"
-        android:drawableRight="@drawable/ic_arrow_downward"
         android:minWidth="50dp"
         android:minHeight="20dp"
         android:padding="5dp"
-        android:text="From"
+        android:text="@string/from"
         android:textColor="@color/black"
         android:textSize="22sp"
+        app:drawableRightCompat="@drawable/ic_arrow_downward"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,45 +53,50 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:background="@drawable/from_to_tv"
+        android:importantForAutofill="no"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/leftTv"
-        android:minHeight="30dp"
-        android:text="1"
         android:maxLength="4"
+        android:minHeight="30dp"
+        android:text="@string/_1"
         android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/leftTv" />
+        app:layout_constraintEnd_toEndOf="@+id/leftTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftTv"
+        tools:ignore="LabelFor" />
+
     <EditText
         android:id="@+id/rightEt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:background="@drawable/from_to_tv"
+        android:importantForAutofill="no"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/rightTv"
-        android:minHeight="30dp"
-        android:text="xxxx"
         android:maxLength="4"
+        android:minHeight="30dp"
+        android:text="@string/xxxx"
         android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="@id/rightTv"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/rightTv" />
+        app:layout_constraintEnd_toEndOf="@+id/rightTv"
+        app:layout_constraintStart_toStartOf="@id/rightTv"
+        app:layout_constraintTop_toBottomOf="@+id/rightTv"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/detailsTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:background="@drawable/from_to_tv"
+        android:padding="10dp"
+        android:text="@string/details"
         android:textAlignment="center"
-        android:text="Details"
         android:textColor="@color/black"
         android:textSize="22sp"
-        app:layout_constraintTop_toBottomOf="@+id/leftEt"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@+id/leftEt"
         app:layout_constraintEnd_toStartOf="@+id/rightEt"
-        android:padding="10dp" />
+        app:layout_constraintStart_toEndOf="@+id/leftEt"
+        app:layout_constraintTop_toBottomOf="@+id/leftEt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
