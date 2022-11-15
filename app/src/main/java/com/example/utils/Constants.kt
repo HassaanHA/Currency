@@ -6,6 +6,6 @@ object Constants {
     const val FAILURE = 500
     const val BASE_URL =
         "https://data.fixer.io/api/"
-    const val API_KEY = "secret_vMuP0TgZxSzpjOc1kf2Ito3t9bB6v2a9"
+    const val API_KEY = "KAmb0s6T71mpGLWd3v0o87CaPuljzsCj"
 
 }
