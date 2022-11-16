@@ -1,4 +1,4 @@
-package com.yalla.yallatablet.network
+package com.example.network
 
 import com.example.utils.Constants.BASE_URL
 import okhttp3.Interceptor

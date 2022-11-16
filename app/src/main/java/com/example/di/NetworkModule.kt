@@ -1,6 +1,6 @@
 package com.example.di
 
-import com.yalla.yallatablet.network.RetrofitClient
+import com.example.network.RetrofitClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
